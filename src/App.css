@@ -1,0 +1,83 @@
+/* ---------- Global Page Setup ---------- */
+body {
+  margin: 0;
+  background-color: whitesmoke; /* soft light background */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Header ---------- */
+.header {
+  background: linear-gradient(to right, lightsteelblue, lightblue);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid gray;
+  box-shadow: 0 2px 6px lightgray;
+}
+
+/* ---------- Header Title ---------- */
+.header-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* ---------- Sign Out Button ---------- */
+.signout-button {
+  background-color: white;
+  color: black;
+  border: 1px solid gray;
+  border-radius: 6px;
+  padding: 7px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 2px lightgray;
+}
+
+.signout-button:hover {
+  background-color: gainsboro;
+  transform: translateY(-1px);
+}
+
+/* ---------- Main Section ---------- */
+main {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- Card Layout ---------- */
+.content-card {
+  background-color: white;
+  width: 60%;
+  min-width: 320px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px lightgray;
+  text-align: center;
+}
+
+/* ---------- Inside Card Text ---------- */
+.content-card h1 {
+  color: darkslategray;
+  margin-bottom: 10px;
+}
+
+.content-card p {
+  color: dimgray;
+  font-size: 1rem;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: lightsteelblue;
+  color: black;
+  font-weight: 600;
+  border-top: 2px solid gray;
+  box-shadow: 0 -1px 4px lightgray;
+}

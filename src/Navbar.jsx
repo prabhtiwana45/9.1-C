@@ -19,7 +19,7 @@ function Navbar() {
   const handleSignOut = async () => {
     try {
       await signOut(auth);
-      alert("Signed out successfully!"); // ✅ Added popup
+      alert("Signed out successfully!"); // Added popup
       navigate('/'); // Redirect to login
     } catch (err) {
       console.error("Error signing out:", err);

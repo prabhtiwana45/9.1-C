@@ -1,83 +1,144 @@
-/* ---------- Global Page Setup ---------- */
+/* Global styles */
 body {
   margin: 0;
-  background-color: whitesmoke; /* soft light background */
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: lavender; /* soft background */
 }
 
-/* ---------- Header ---------- */
-.header {
-  background: linear-gradient(to right, lightsteelblue, lightblue);
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid gray;
-  box-shadow: 0 2px 6px lightgray;
-}
-
-/* ---------- Header Title ---------- */
-.header-title {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
-}
-
-/* ---------- Sign Out Button ---------- */
-.signout-button {
-  background-color: white;
-  color: black;
-  border: 1px solid gray;
-  border-radius: 6px;
-  padding: 7px 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 1px 2px lightgray;
-}
-
-.signout-button:hover {
-  background-color: gainsboro;
-  transform: translateY(-1px);
-}
-
-/* ---------- Main Section ---------- */
-main {
-  padding: 60px 0;
+/* Container for login/register pages */
+.auth-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
-/* ---------- Card Layout ---------- */
-.content-card {
+/* Form box */
+form {
   background-color: white;
-  width: 60%;
-  min-width: 320px;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px lightgray;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 350px;
   text-align: center;
 }
 
-/* ---------- Inside Card Text ---------- */
-.content-card h1 {
-  color: darkslategray;
-  margin-bottom: 10px;
+/* Title */
+h1 {
+  color: midnightblue;
+  margin-bottom: 25px;
 }
 
-.content-card p {
+/* Label */
+label {
+  display: block;
+  text-align: left;
   color: dimgray;
-  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 6px;
 }
 
-/* ---------- Footer ---------- */
-.footer {
-  text-align: center;
-  padding: 15px 0;
-  background-color: lightsteelblue;
-  color: black;
+/* Input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: ghostwhite;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: royalblue;
+  box-shadow: 0 0 5px lightblue;
+  outline: none;
+}
+
+/* Login/Register button */
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  background-color: royalblue;
+  color: white;
+  font-size: 16px;
   font-weight: 600;
-  border-top: 2px solid gray;
-  box-shadow: 0 -1px 4px lightgray;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.auth-button:hover {
+  background-color: dodgerblue;
+  transform: scale(1.02);
+}
+
+/* Error text */
+.error-message {
+  color: crimson;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Sign up / login link */
+.auth-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: darkblue;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+  color: mediumblue;
+}
+
+
+.home-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  background-color: lavender;
+}
+
+.home-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px 50px;
+  text-align: center;
+  width: 60%;
+  max-width: 600px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.home-title {
+  font-size: 1.9rem;
+  color: #102a63;
+  margin-bottom: 15px;
+}
+
+.brand {
+  color: royalblue;
+}
+
+.home-message {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .home-card {
+    width: 90%;
+    padding: 25px;
+  }
+  .home-title {
+    font-size: 1.6rem;
+  }
 }
